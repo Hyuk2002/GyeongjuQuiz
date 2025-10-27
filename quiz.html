@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>퀴즈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-container">
+        <h1 class="logo"><a href="index.html">경주 문화재 퀴즈</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="heritage.html" class="nav-link">문화재 정보</a></li>
+                <li><a href="quiz.html" class="nav-link active">퀴즈</a></li>
+                <li><a href="ranking.html" class="nav-link">랭킹</a></li>
+                <li><a href="login.html" class="nav-link">로그인</a></li>
+                <li id="logout-menu" style="display:none;"><a href="#" class="nav-link" id="logout-btn">로그아웃</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- 메인 콘텐츠 -->
+<main>
+    <section class="quiz-section">
+        <div class="quiz-card">
+            <h2 id="question">퀴즈 질문</h2>
+            <div id="choices" class="choices-container"></div>
+            <button id="next-btn" class="btn-primary">다음 문제</button>
+            <p id="score"></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 경주 문화재 퀴즈 | 제작: 지혁</p>
+</footer>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
+

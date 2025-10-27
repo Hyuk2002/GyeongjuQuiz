@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="nav-container">
+        <h1 class="logo"><a href="index.html">경주 문화재 퀴즈</a></h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="heritage.html" class="nav-link">문화재 정보</a></li>
+                <li><a href="quiz.html" class="nav-link">퀴즈</a></li>
+                <li><a href="ranking.html" class="nav-link">랭킹</a></li>
+                <li><a href="login.html" class="nav-link">로그인</a></li>
+                <li id="logout-menu" style="display:none;"><a href="#" class="nav-link" id="logout-btn">로그아웃</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="form-container">
+    <h2>로그인</h2>
+     <form>
+        <div class="form-group">
+            <label for="username">사용자 이름 입력</label>
+            <input type="text" id="username" name="username" placeholder="사용자 이름 입력">
+        </div>
+        <div class="form-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" placeholder="비밀번호 입력">
+        </div>
+        <button type="submit">로그인</button>
+    </form>
+</div>
+
+
+
+<script src="js/login.js"></script>
+</body>
+</html>

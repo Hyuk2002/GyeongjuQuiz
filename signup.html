@@ -22,23 +22,25 @@
 </header>
 
 
-<main>
+<main class="form-container">
     <h2>회원가입</h2>
     <form id="signupForm">
-        <label for="username">아이디:</label>
-        <input type="text" id="username" required><br><br>
+        <div class="form-group">
+            <label for="username">아이디</label>
+            <input type="text" id="username" required>
+        </div>
 
-        <label for="password">비밀번호:</label>
-        <input type="password" id="password" required><br><br>
+        <div class="form-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" required>
+        </div>
 
         <button type="submit">회원가입</button>
     </form>
 </main>
 
-
 <script src="js/main.js"></script>
 <script>
-    // 회원가입 JS
     document.getElementById("signupForm").addEventListener("submit", function(e){
         e.preventDefault();
 
@@ -53,7 +55,7 @@
             users[username] = password;
             localStorage.setItem("users", JSON.stringify(users));
             alert("회원가입이 완료되었습니다!");
-            window.location.href = "login.html"; // 로그인 페이지로 이동
+            window.location.href = "login.html";
         }
     });
 </script>
